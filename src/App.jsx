@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { auth } from "../dbconfig";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import PhoneAuth from "./PhoneAuth";
 
 function App() {
   const provider = new GoogleAuthProvider();
@@ -39,6 +40,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      <PhoneAuth />
     </>
   );
 }
